@@ -7,7 +7,7 @@
 URI는 자원이 어디에 있는지 식별하는 방법이다. URL방법의 종류로는 2가지가 존재하는데 첫번째는 __URL(Uniform Resource Locator)__ 이고 두번째는 __URN(Uniform Resource Name)__  이다.
 
 URL의 경우 자원의 위치를 특정해서 찾는 방법이고, URN은 이름 그 자체를 의미한다.
-![[스크린샷 2024-05-06 140635.png]]
+![[스크린샷 2024-05-06 140635.png]](https://github.com/SpringFoward/http-fundamentals/blob/5c7b59f52135791d5f53d9a0339e3d35aff63c0a/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-06%20140635.png)
 보통은 URL을 주로 많이 사용하고 URL,URN 전부 URI이다.
 
 ### URI 단어의 뜻 
