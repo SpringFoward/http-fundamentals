@@ -17,7 +17,10 @@
 #### HTTP 헤더 용도
 + HTTP 전송에 필요한 모든 부가정보
 + 표준 헤더가 너무 많음
-+ 필요시 임의의 헤더 추가 가능![[스크린샷 2024-05-10 105144.png]]
++ 필요시 임의의 헤더 추가 가능
+
+![[스크린샷 2024-05-10 105144.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20105144.png)
+
 이전에는 RFC2616을 표준으로 사용하였지만, 2014년 부터 RFC7230 ~ 7235를 사용한다.
 
 #### RFC723x 변화
@@ -32,7 +35,8 @@
 + Content-Language: 표현 데이터의 자연 언어
 + Content-Length: 표현 데이터의 길이
 + 표현 헤더는 전송, 응답 둘다 사용
-![[스크린샷 2024-05-10 105600.png]]
+
+![[스크린샷 2024-05-10 105600.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20105600.png)
 
 ### Content-Type
 **표현 데이터의 형식 설명
