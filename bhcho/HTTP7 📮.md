@@ -233,9 +233,11 @@ ___
 
 + Set-Cookie: 서버에서 클라이언트로 쿠키 전달(응답)
 + Cookie: 클라이언트가 서버에서 받은 쿠키를 저장하고, HTTP 요청시 서버로 전달
-+ 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.![[스크린샷 2024-05-10 114953.png]]
++ 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.
+
+![[스크린샷 2024-05-10 114953.png]](https://github.com/SpringFoward/http-fundamentals/blob/94fa695226a773ac8c27797d3956b5da26fc2820/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20114953.png)
+
 이러한 문제는 쿠키를 사용하면 해결된다.
-![[ 
 + 예) set-cookie: **sessionId=abcde1234**; **expires**=Sat, 26-Dec-2020 00:00:00 GMT; **path=/; domain**=.google.com; **Secure
 + 사용처
  + 사용자 로그인 세션 관리
