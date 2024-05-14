@@ -19,22 +19,30 @@ __데이터의 전달 방식은 크게 2가지로 나눌 수 있다.__
 
 ### 정적 데이터 조회 (쿼리 파라미터 미사용)
  + 이미지, 정적 텍스트 문서
-![[스크린샷 2024-05-07 173022.png]]
+
+![[스크린샷 2024-05-07 173022.png]](https://github.com/SpringFoward/http-fundamentals/blob/946855418eed17bfa62e590a726b4b9f97a3c3e5/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-07%20173022.png)
+
 클라이언트에서 서버로 별이라는 이미지를 전달할 때는 서버에 URI만 넣어주면 된다. 이런 정적 데이터는 GET을 사용하고 일반적으로 쿼리 파라미터 없이 리소스 경로로 단순하게 조회가 가능하다.
 
 ### 동적 데이터 조회 (쿼리 파라미터 사용)
  + 검색,게시판 목록 정렬 필터(검색어)
-![[스크린샷 2024-05-07 200004.png]]
+
+![[스크린샷 2024-05-07 200004.png]](https://github.com/SpringFoward/http-fundamentals/blob/946855418eed17bfa62e590a726b4b9f97a3c3e5/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-07%20200004.png)
+
 동적 데이터를 조회할 때는 검색어와 같은 추가 데이터를 전달해야 하는데 이럴 때는 쿼리 파라미터를 이용하여 데이터를 전달하고 서버가 그 데이터를 응답해준다. 주로 검색을하거나 게시판 목록에서 정렬할 때 사용하며, 조회 조건을 줄여주는 필터나 조회결과를 정렬하는 정렬 조건에 주로 사용한다. 
 동적 데이터는 정적 데이터 조회와 똑같이 GET을 사용하고, 다른점은 쿼리 파라미터를 사용하여 데이터를 추가로 전달한다는 점이 다르다.
 
 ### HTML Form을 통한 데이터 전송
 __POST 전송 - 저장__
-![[스크린샷 2024-05-07 200527.png]]
+
+![[스크린샷 2024-05-07 200527.png]](https://github.com/SpringFoward/http-fundamentals/blob/946855418eed17bfa62e590a726b4b9f97a3c3e5/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-07%20200527.png)
+
 우리가 서버를 만들고 싶을 때 HTML Form을 사용할 것인데 HTML Form은 위와 같다. 클라이언트가 이러한 Form을 만들고 서버에 전송을 하면 서버는 이를 해석하여 클라이언트가 요청한 응답을 보내주는 형식이다. POST말고 GET을 사용할 수도 있지만, **데이터 수정**이 일어나선 안된다.
 
 __multipart/form-data__
-![[스크린샷 2024-05-07 201516.png]]
+
+![[스크린샷 2024-05-07 201516.png]](https://github.com/SpringFoward/http-fundamentals/blob/946855418eed17bfa62e590a726b4b9f97a3c3e5/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-07%20201516%201.png)
+
 이 HTML Form 형식을 보면 POST자리에 multipart/form-data가 들어가있다. 이는  boundary를 이용하여 각각의 입력마다 잘라서 넣어준다. (멀티파트) 주로 binary데이터를 전송할 때 사용한다.
 
 ### HTML Form 정리
@@ -52,7 +60,9 @@ __multipart/form-data__
 
 
 ### HTTP API를 통한 데이터 전송
+
  ![[스크린샷 2024-05-07 203449.png]]
+ 
  이는 안드로이드나 아이폰 애플리케이션에서 바로 서버로 데이터를 전송할 때 사용한다. 위와 같이 내가 다 만들고 전송하면 된다.
 
 
@@ -130,10 +140,6 @@ __multipart/form-data__
 + **회원** 삭제 /members/{id}/delete -> POST
 
 이런 식으로 HTML FORM은 GET ,POST 만 지원하여 불편함이 존재한다. 그래서 **컨트롤 URI**(/new, /edit, /delete)를 사용하여 PATCH,PUT,DELETE를 대신하여 사용한다. 
-
-##### https://restfulapi.net/resource-naming  참고
-
----
 
 ##### https://restfulapi.net/resource-naming  참고
 
