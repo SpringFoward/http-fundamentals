@@ -17,7 +17,14 @@
 #### HTTP 헤더 용도
 + HTTP 전송에 필요한 모든 부가정보
 + 표준 헤더가 너무 많음
+<<<<<<< HEAD
 + 필요시 임의의 헤더 추가 가능![[스크린샷 2024-05-10 105144.png]]
+=======
++ 필요시 임의의 헤더 추가 가능
+
+![[스크린샷 2024-05-10 105144.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20105144.png)
+
+>>>>>>> 109481c419f171822f44156ee408c37354f36798
 이전에는 RFC2616을 표준으로 사용하였지만, 2014년 부터 RFC7230 ~ 7235를 사용한다.
 
 #### RFC723x 변화
@@ -32,7 +39,12 @@
 + Content-Language: 표현 데이터의 자연 언어
 + Content-Length: 표현 데이터의 길이
 + 표현 헤더는 전송, 응답 둘다 사용
+<<<<<<< HEAD
 ![[스크린샷 2024-05-10 105600.png]]
+=======
+
+![[스크린샷 2024-05-10 105600.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20105600.png)
+>>>>>>> 109481c419f171822f44156ee408c37354f36798
 
 ### Content-Type
 **표현 데이터의 형식 설명
@@ -229,7 +241,14 @@ ___
 
 + Set-Cookie: 서버에서 클라이언트로 쿠키 전달(응답)
 + Cookie: 클라이언트가 서버에서 받은 쿠키를 저장하고, HTTP 요청시 서버로 전달
+<<<<<<< HEAD
 + 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.![[스크린샷 2024-05-10 114953.png]]
+=======
++ 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.
+
+![[스크린샷 2024-05-10 114953.png]](https://github.com/SpringFoward/http-fundamentals/blob/94fa695226a773ac8c27797d3956b5da26fc2820/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20114953.png)
+
+>>>>>>> 109481c419f171822f44156ee408c37354f36798
 이러한 문제는 쿠키를 사용하면 해결된다.
 + 예) set-cookie: **sessionId=abcde1234**; **expires**=Sat, 26-Dec-2020 00:00:00 GMT; **path=/; domain**=.google.com; **Secure
 + 사용처
