@@ -46,11 +46,8 @@
 
 #### 리다이렉션 이해
 
-<<<<<<< HEAD
-![[스크린샷 2024-05-09 121205.png]]
-=======
 ![[스크린샷 2024-05-09 121205.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-09%20121205.png)
->>>>>>> 109481c419f171822f44156ee408c37354f36798
+
 이런식으로 리다이렉션이 일어난다.
 
 #### 리다이렉션의 종류
@@ -62,12 +59,11 @@
 **301,308
 
 + 301 Moved Permanently : 리다이렉트시 요청 메서드가 GET으로 변하고, 본문이 제거될 수 있음
-<<<<<<< HEAD
-+ 308 Permanent Redirect : 301과 기능은 같으나 리다이렉트시 요청 메서드와 본문을 유지한다.(처음 POST를 보내면 리다이렉트 POST유지)![[스크린샷 2024-05-09 192435.png]]
-=======
 + 308 Permanent Redirect : 301과 기능은 같으나 리다이렉트시 요청 메서드와 본문을 유지한다.(처음 POST를 보내면 리다이렉트 POST유지)
++ 308 Permanent Redirect : 301과 기능은 같으나 리다이렉트시 요청 메서드와 본문을 유지한다.(처음 POST를 보내면 리다이렉트 POST유지)
+
 ![[스크린샷 2024-05-09 192435.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-09%20192435.png)
->>>>>>> 109481c419f171822f44156ee408c37354f36798
+
 #### 일시적인 리다이렉션
 **302,307,303
 
@@ -82,11 +78,8 @@
 + **PRG(Post/Redirect/Get)
  + 일시적인 리다이렉션
  + 예를 들어 POST로 주문한 후에 웹 브라우저를 새로고침하면 중복 주문이 될 수 있는데, 이것을 막는 일시적인 리다이렉션이다.
-<<<<<<< HEAD
- ![[스크린샷 2024-05-09 193127.png]]
-=======
+
  ![[스크린샷 2024-05-09 193127.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-09%20193127.png)
->>>>>>> 109481c419f171822f44156ee408c37354f36798
 
 #### 기타 리다이렉션
 **300 304
