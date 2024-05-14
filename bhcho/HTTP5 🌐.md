@@ -61,7 +61,7 @@ __multipart/form-data__
 
 ### HTTP API를 통한 데이터 전송
 
- ![[스크린샷 2024-05-07 203449.png]]
+ ![[스크린샷 2024-05-07 203449.png]](https://github.com/SpringFoward/http-fundamentals/blob/61dcf4c14a0563498eeb10dfc34cab45e5adf84c/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-07%20203449%201.png)
  
  이는 안드로이드나 아이폰 애플리케이션에서 바로 서버로 데이터를 전송할 때 사용한다. 위와 같이 내가 다 만들고 전송하면 된다.
 
