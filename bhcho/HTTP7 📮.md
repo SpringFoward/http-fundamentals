@@ -17,14 +17,11 @@
 #### HTTP 헤더 용도
 + HTTP 전송에 필요한 모든 부가정보
 + 표준 헤더가 너무 많음
-<<<<<<< HEAD
-+ 필요시 임의의 헤더 추가 가능![[스크린샷 2024-05-10 105144.png]]
-=======
++ 필요시 임의의 헤더 추가 가능
 + 필요시 임의의 헤더 추가 가능
 
 ![[스크린샷 2024-05-10 105144.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20105144.png)
 
->>>>>>> 109481c419f171822f44156ee408c37354f36798
 이전에는 RFC2616을 표준으로 사용하였지만, 2014년 부터 RFC7230 ~ 7235를 사용한다.
 
 #### RFC723x 변화
@@ -39,15 +36,11 @@
 + Content-Language: 표현 데이터의 자연 언어
 + Content-Length: 표현 데이터의 길이
 + 표현 헤더는 전송, 응답 둘다 사용
-<<<<<<< HEAD
-![[스크린샷 2024-05-10 105600.png]]
-=======
 
 ![[스크린샷 2024-05-10 105600.png]](https://github.com/SpringFoward/http-fundamentals/blob/0a6929c97102550fe9395a0a412fb6206d6a36cb/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20105600.png)
->>>>>>> 109481c419f171822f44156ee408c37354f36798
 
 ### Content-Type
-**표현 데이터의 형식 설명
+**표현 데이터의 형식 설명**
 
 + 미디어 타입, 문자 인코딩
 + ex)
@@ -56,7 +49,7 @@
  + image/png
 
 ### Content-Language
-**표현 데이터의 자연 언어
+**표현 데이터의 자연 언어**
 
 + 표현 데이터의 자연 언어를 표현
 + ex)
@@ -65,7 +58,7 @@
  + en-US
 
 ### Content-Length
-**표현 데이터의 길이
+**표현 데이터의 길이**
 
 + 바이트 단위
 + Transfer-Encoding(전송 코딩)을 사용하면 Content-Length를 사용하면 안됨
@@ -88,7 +81,7 @@ ___
 이를 사용하면 내가 원하는 언어 형식으로 언어를 받을 수 있다.(물론 내가 원하는 언어가 서버에 없는 경우에는 사용 불가)
 
 #### 협상과 우선순위1
-**Quality Values(q)
+**Quality Values(q)**
 
 + 0~1, 클수록 높은 우선순위
 + 생략하면 1
@@ -100,7 +93,7 @@ ___
 + 이렇듯 언어 형식을 여러개 요청할 수 있음
 
 #### 협상과 우선순위2
-**Quality Values(q)
+**Quality Values(q)**
 
 + 구체적인 것이 우선한다.
 + Accept: text/*, text/plain, text/plain;format=flowed, */*
@@ -149,14 +142,14 @@ ___
 + Date: 메시지가 생성된 날짜
 
 #### Form
-**유저 에이전트의 이메일 정보
+**유저 에이전트의 이메일 정보**
 
 + 일반적으로 잘 사용되지 않음
 + 검색 엔진 같은 곳에서, 주로 사용
 + 요청에서 사용
 
 #### Referer
-**이전 웹 페이지 주소
+**이전 웹 페이지 주소**
 
 + 현재 요청된 페이지의 이전 웹 페이지 주소
 + A -> B로 이동하는 경우 B를 요청할 때 Referer: A 를 포함해서 요청
@@ -165,7 +158,7 @@ ___
 + 참고: referer는 단어 referrer의 오타 (만들고 나중에 알아서 고치기 애매해짐)
 
 #### User-Agent
-**유저 에이전트 애플리케이션 정보
+**유저 에이전트 애플리케이션 정보**
 
 + user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/ 537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36
 + 클라이언트의 애플리케이션 정보(웹 브라우저 정보, 등등)
@@ -173,14 +166,14 @@ ___
 + 요청에서 사용
 
 #### Server
-**요청을 처리하는 ORIGIN 서버의 소프트웨어 정보
+**요청을 처리하는 ORIGIN 서버의 소프트웨어 정보**
 
 + Server: Apache/2.2.22 (Debian)
 + server: nginx
 + 응답에서 사용
 
 #### Date
-**메시지가 발생한 날짜와 시간
+**메시지가 발생한 날짜와 시간**
 
 + Date: Tue, 15 Nov 1994 08:12:31 GMT
 + 응답에서 사용
@@ -194,20 +187,20 @@ ___
 + Retry-After: 유저 에이전트가 다음 요청을 하기까지 기다려야 하는 시간
 
 #### Host
-**요청한 호스트 정보(도메인)
+**요청한 호스트 정보(도메인)**
 
 + 요청에서 사용
 + 하나의 서버가 여러 도메인을 처리해야 할 때
 + 하나의 IP 주소에 여러 도메인이 적용되어 있을 때
 
 #### Location
-**페이지 리다이렉션
+**페이지 리다이렉션**
 
 + 웹 브라우저는 3xx 응답의 결과에 Location 헤더가 있으면, Location 위치로 자동 이동 (리다이렉트)
 + 3xx (Redirection): Location 값은 요청을 자동으로 리디렉션하기 위한 대상 리소스를 가리킴
 
 #### Allow
-**허용 가능한 HTTP 메서드
+**허용 가능한 HTTP 메서드**
 
 + 405 (Method Not Allowed) 에서 응답에 포함해야함
 + Allow: GET, HEAD, PUT
@@ -241,16 +234,13 @@ ___
 
 + Set-Cookie: 서버에서 클라이언트로 쿠키 전달(응답)
 + Cookie: 클라이언트가 서버에서 받은 쿠키를 저장하고, HTTP 요청시 서버로 전달
-<<<<<<< HEAD
-+ 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.![[스크린샷 2024-05-10 114953.png]]
-=======
++ 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.
 + 쿠키를 사용하지 않으면 클라이언트가 로그인 하였을 때 그 로그인 정보를 모든 요청에 포함하여 전달해야 한다.
 
 ![[스크린샷 2024-05-10 114953.png]](https://github.com/SpringFoward/http-fundamentals/blob/94fa695226a773ac8c27797d3956b5da26fc2820/bhcho/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%20%EB%B3%B4%EA%B4%80/2%EC%A3%BC%EC%B0%A8/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-10%20114953.png)
 
->>>>>>> 109481c419f171822f44156ee408c37354f36798
 이러한 문제는 쿠키를 사용하면 해결된다.
-+ 예) set-cookie: **sessionId=abcde1234**; **expires**=Sat, 26-Dec-2020 00:00:00 GMT; **path=/; domain**=.google.com; **Secure
++ 예) set-cookie: **sessionId=abcde1234**; **expires**=Sat, 26-Dec-2020 00:00:00 GMT; **path=/; domain**=.google.com; **Secure**
 + 사용처
  + 사용자 로그인 세션 관리
  + 광고 정보 트래킹
@@ -261,7 +251,7 @@ ___
 + **주의! 사용자의 민감한 정보(카드 번호, 주민 번호 등)는 저장하면 안됨
 
 #### 쿠키 - 생명주기
-**Expires, max-age
+**Expires, max-age**
 
 + Set-Cookie: expires=Sat, 26-Dec-2020 04:39:21 GMT
  + 만료일이 되면 쿠키 삭제(보안과 용량을 위해서)
@@ -271,14 +261,14 @@ ___
 + 영속 쿠키: 만료 날짜를 입력하면 해당 날짜까지 유지
 
 #### 쿠키 - 경로
-**Path
+**Path**
 
 + 예) path=/home
 + 이 경로를 포함한 하위 경로 페이지만 쿠키 접근
 + 일반적으로 path=/ 루트로 지정
 
 #### 쿠키 - 보안
-**Secure, HttpOnly, SameSite
+**Secure, HttpOnly, SameSite**
 
 + Secure
  + 쿠키는 http, https를 구분하지 않고 전송하지만, Secure는 https에만 전송
